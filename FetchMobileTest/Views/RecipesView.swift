@@ -47,6 +47,7 @@ struct RecipesView: View {
                     // call `fetchRecipes` when it changes by uncommenting the line bellow [FO]
                     // Task { await viewModel.fetchRecipes() }
                 }
+                .presentationDetents([.fraction(0.3)])
             }
         }
     }

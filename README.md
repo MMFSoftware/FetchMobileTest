@@ -42,19 +42,6 @@ Everything was done before creating the GitHub repo, so it ended up with just on
 - Added pull-to-refresh functionality to allow users to reload the recipe list by pulling down on the screen.
 - The pull-to-refresh control is integrated into the SwiftUI List, which triggers a reload of the recipes from the API.
 
-Example SwiftUI code for pull-to-refresh:
-
-```swift
-List {
-    ForEach(viewModel.recipes) { recipe in
-        RecipeRow(recipe: recipe)
-    }
-}
-.refreshable {
-    await viewModel.loadRecipes()
-}
-```
-
 ### Testing
 - Extensive unit test coverage
 - Focus on testable architecture
